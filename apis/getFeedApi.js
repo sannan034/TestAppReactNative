@@ -1,5 +1,5 @@
 
-const API_KEY = "47334154-d7ec99e07ae673cf0f4d20f66";
+const API_KEY = process.env.EXPO_PUBLIC_API_KEY;
 
 export default async function getFeedApi(page = 1){
     const url = "https://pixabay.com/api/?key=" + API_KEY  +`&page=${page}`;
